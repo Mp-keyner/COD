@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --Anton: "Anton", sans-serif;
+  --Normal: "IBM Plex Mono", monospace;
+}
+body {
+  background-image: url("./Img/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: var(--Normal);
+  color: white;
+}
+header {
+    z-index: 1;
+  font-family: var(--Anton);
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  width: 90%;
+  position: fixed;
+  left: 50%;
+  top: 2.5pc;
+  translate: -50% -50%;
+  padding: 0 1pc;
+  backdrop-filter: blur(10px); /* Aplicamos un desenfoque de  10px */
+  -webkit-backdrop-filter: blur(
+    10px
+  ); /* Prefijo para compatibilidad con navegadores basados en WebKit */
+  background-color: #1918189e;
+}
+header button {
+  font-family: var(--Anton);
+  letter-spacing: 1px;
+  border: 1px solid red;
+  width: 7pc;
+  height: 1.7pc;
+  background-color: #d70000;
+  color: white;
+}
+header img:nth-child(1) {
+  height: 20px;
+}
+header img:nth-child(2) {
+  height: 14px;
+}
+header div {
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1pc;
+}
+.section1 {
+  /* background-color: #333; */
+  height: 48pc;
+  background-image: url("./Img/linea.png"), url("./Img/fondoHome.png");
+  background-position: 179% 130%, top left;
+  background-repeat: no-repeat;
+  background-size: 86pc;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 4pc;
+}
+.section1 div {
+  /* background-color: red; */
+  width: 400px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1pc;
+  padding: 1pc;
+}
+.section1 div button {
+  width: 80%;
+  border: none;
+  height: 44px;
+  font-size: 1.1pc;
+  background-color: #60962f;
+  font-family: var(--Anton);
+  letter-spacing: 1px;
+}
+.section1 div div {
+  height: 180px;
+  width: 80%;
+  background-image: url("./Img/fondoVideo.png"), url("./Img/videoHome.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section1 img {
+  width: 100%;
+}
+.section2 {
+  height: 25pc;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.section2 h1 {
+  font-family: var(--Anton);
+  letter-spacing: 2px;
+  font-size: 2.3pc;
+}
+.section2 img {
+  width: 33%;
+}
+.section2 p {
+  font-size: 1.3pc;
+  font-weight: bold;
+  width: 80%;
+}
+.section3 {
+  height: 35pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sectionCard,
+.sectionSoldados {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  height: 80%;
+  width: 100%;
+  border-bottom: 1px #5d5d5d solid;
+  border-top: 1px #5d5d5d solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1pc;
+}
+.sectionCard div {
+  width: 23pc;
+  text-align: center;
+  height: 90%;
+}
+.sectionCard img {
+  width: 100%;
+  border-radius: 5px;
+}
+.section4 {
+  height: 40pc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.section4 h2, .section5 h2 {
+  font-family: var(--Anton);
+  letter-spacing: 2px;
+  font-size: 2.3pc;
+}
+.sectionSoldados {
+  gap: 0;
+}
+.sectionSoldados div {
+  height: 100%;
+  width: 232px;
+  /* background-color: red; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  font-family: var(--Anton);
+  letter-spacing: 1px;
+  font-size: 1pc;
+}
+.sectionSoldados div:nth-child(1) {
+  background-image: url("./Img/1.png");
+}
+.sectionSoldados div:nth-child(2) {
+  background-image: url("./Img/2.png");
+}
+.sectionSoldados div:nth-child(3) {
+  background-image: url("./Img/3.png");
+}
+.sectionSoldados div:nth-child(4) {
+  background-image: url("./Img/4.png");
+}
+.sectionSoldados div:nth-child(5) {
+  background-image: url("./Img/5.png");
+}
+.section5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2pc;
+    height: 40pc;
+}
+.sectionLogos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2pc;
+}
+.sectionLogos div{
+    width: 15pc;
+    height: 14pc;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #C2C7CB;
+    background: linear-gradient(180deg, #24272a 0%, rgba(36, 39, 42, 0) 100%);
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.5);
+}
